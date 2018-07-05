@@ -1,0 +1,8 @@
+/* This stylesheet is used for pre-processed CSS files */
+/* We'll output our post-processed CSS files into src/styles/index.css */
+@import "normalize.css";
+@import "./variable.css";
+@import "./body.css";
+@import "./container.css";
+
+@import "../components/Sidebar/Sidebar.css";
