@@ -14,7 +14,9 @@ export const Routes = props => (
         <Route
             path='/'
             exact
-            component={Home}
+            render={(renderProps) => (
+                <Home {...props} {...renderProps} />
+            )}
         />
         <Route
             path='/about'

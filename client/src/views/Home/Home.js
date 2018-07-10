@@ -1,12 +1,34 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import { pageWithLayout } from '../../containers/page';
+import { pageWithoutLayout, pageWithLayout } from '../../containers/page';
+import { discover } from '../../data/api/movies';
+import PosterList from '../../components/Poster/List';
 
-export const Home = props => (
-    <div className='home'>
-        <h2>Welcome home</h2>
-        <Link to='/about'>About us</Link>
-    </div>
-)
+export class Home extends Component {
+    state = {
+        movies: []
+    }
 
-export default pageWithLayout(Home);
+    componentDidMount() {
+        discover().then(({movies}) => {
+            this.setState({ movies })
+        })
+    }
+
+    render() {
+        const { movies } = this.state
+        const { movieConfig } = this.props
+        return (
+            <div className='home'>
+                <h2>Welcome home</h2>
+                <PosterList
+                    movies={movies}
+                    movieConfig={movieConfig}
+                />
+                <Link to='/about'>About us</Link>
+            </div>
+        );
+    }
+}
+
+export default pageWithoutLayout(pageWithLayout(Home));
