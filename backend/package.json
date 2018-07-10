@@ -1,0 +1,58 @@
+{
+  "name": "login_server",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "nodemon --ignore routes.json index.js",
+    "start": "NODE_ENV=production node index.js",
+    "genroutes": "node ./listroutes.js"
+  },
+  "now": {
+    "alias": "fullstackmovies.com"
+  },
+  "babel": {
+    "presets": [
+      "es2015",
+      "react"
+    ],
+    "plugins": [
+      "transform-decorators-legacy",
+      "transform-class-properties"
+    ]
+  },
+  "dependencies": {
+    "babel-plugin-transform-class-properties": "^6.23.0",
+    "bcrypt": "^1.0.2",
+    "body-parser": "^1.16.0",
+    "cors": "^2.8.1",
+    "dotenv": "^4.0.0",
+    "express": "^4.14.1",
+    "express-boom": "^2.0.0",
+    "jsdoc": "^3.4.3",
+    "jsonwebtoken": "^7.2.1",
+    "lodash": "^4.17.4",
+    "memoizee": "^0.4.1",
+    "moviedb": "^0.2.7",
+    "now-logs": "^0.0.7",
+    "passport": "^0.3.2",
+    "passport-jwt": "^2.2.1",
+    "passport-spotify": "^0.3.1",
+    "request": "^2.79.0",
+    "sequelize": "^3.30.1",
+    "socket.io": "^1.7.3",
+    "sqlite3": "^4.0.1",
+    "sse-channel": "^2.0.5",
+    "superagent": "^3.4.1",
+    "validate.js": "^0.11.1"
+  },
+  "devDependencies": {
+    "babel-core": "^6.23.1",
+    "babel-plugin-transform-decorators-legacy": "^1.3.4",
+    "babel-polyfill": "^6.23.0",
+    "babel-preset-es2015": "^6.22.0",
+    "babel-preset-react": "^6.23.0",
+    "concurrently": "^3.3.0",
+    "nodemon": "^1.11.0"
+  }
+}
