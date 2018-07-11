@@ -418,13 +418,22 @@ body, #root, .app, .App, .wrapper {
 .contents .contentHeader section {
             display: flex;
             align-items: center;
-}
-.contents .contentHeader section div {
+
+            /* div {
                 padding: 5px 0;
-                font-size: 15px
-            }
-.contents .contentHeader section div.title {
-  margin: 15px;
+                font-size: 15px;
+
+                &.title {
+                    margin: 15px;
+                    font-size: 1.6em;
+                }
+            } */
+}
+.contents .contentHeader .item {
+          padding: 5px 0;
+          font-size: 1.1em;
+}
+.contents .contentHeader .item.title {
   font-size: 1.6em;
 }
 .btn {
