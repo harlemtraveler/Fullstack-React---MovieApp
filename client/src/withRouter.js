@@ -11,3 +11,6 @@ props => (
 )
 
 export default withRouter;
+// !!!Duplicate File!!!
+// This is the original file.
+// The file currently on use is located in "client/src/ocntainers/withRouter.js"

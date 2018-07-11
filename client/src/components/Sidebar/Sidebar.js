@@ -9,6 +9,14 @@ export const Sidebar = props => (
     <div className="sidebar">
         <section>
             <div className='heading'>Nav</div>
+            <ul>
+                <li>
+                    <NavLink
+                        to='/' isActive={isActive}>
+                        Discover
+                    </NavLink>
+                </li>
+            </ul>
         </section>
         <section>
             <div className='heading'>Links</div>

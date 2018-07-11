@@ -6,3 +6,7 @@
 @import "./container.css";
 
 @import "../components/Sidebar/Sidebar.css";
+@import "../components/Poster/Poster.css";
+@import "../components/ContentHeader/ContentHeader.css";
+@import "../views/Home/MovieDetails.css";
+@import "../components/StarRating/StarRating.css";

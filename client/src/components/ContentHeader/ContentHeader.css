@@ -1,0 +1,54 @@
+.contents {
+    .children.sticky {
+        margin-top: $content-header-height;
+    }
+    .contentHeader {
+        display: flex;
+        justify-content: space-between;
+        background: $white;
+        height: $content-header-height;
+        padding: $content-padding;
+        position: relative;
+        color: $dark;
+        max-width: 100%;
+        width: 100%;
+
+        &.sticky {
+            color: $dark;
+            box-sizing: border-box;
+            position: relative;
+
+            @media (min-width: $large-screen)
+            {
+                position: fixed;
+                left: $sidebar-width;
+                right: 0;
+                top: 0;
+                text-align: center;
+                width: calc(100% - $sidebar-width);
+            }
+        }
+
+        section {
+            display: flex;
+            align-items: center;
+
+            /* div {
+                padding: 5px 0;
+                font-size: 15px;
+
+                &.title {
+                    margin: 15px;
+                    font-size: 1.6em;
+                }
+            } */
+        }
+        .item {
+          padding: 5px 0;
+          font-size: 1.1em;
+
+          &.title {
+            font-size: 1.6em;
+          }
+    }
+}

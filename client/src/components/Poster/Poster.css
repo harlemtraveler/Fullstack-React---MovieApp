@@ -1,0 +1,39 @@
+.poster_list {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+
+    @media (min-width: $large-screen) {
+        flex-flow: row wrap;
+        align-items: flex-start;
+    }
+
+    .poster {
+        flex: 1;
+        justify-content: flex-start;
+        align-items: flex-start;
+        align-content: center;
+
+        @media (min-width: $large-screen) {
+            align-self: center;
+            word-wrap: break-word;
+            width: 200px;
+            max-width: 200px;
+        }
+
+        img {
+            width: 100%;
+            border-radius: 5px;
+            align-self: center;
+
+            @media (min-width: $large-screen) {
+                width: 200px;
+            }
+        }
+        .details {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            margin: 10px 0;
+        }
+    }
+}

@@ -9,7 +9,9 @@ export const withMovieConfig = Wrapped => props => {
 
         componentDidMount() {
             movieConfig().then(cfg => {
-                this.setState({movieConfig: cfg})
+                this.setState({
+                    movieConfig: cfg
+                })
             })
         }
 

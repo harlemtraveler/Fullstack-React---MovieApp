@@ -1,6 +1,7 @@
 import React from 'react';
 import {
-    Route
+    Route,
+    Switch
 } from 'react-router-dom';
 import {
     pageWithoutLayout
@@ -10,7 +11,7 @@ import Home from './views/Home/Home';
 import About from './views/About/About';
 
 export const Routes = props => (
-    <div className='app'>
+    <Switch className='app'>
         <Route
             path='/'
             exact
@@ -27,7 +28,7 @@ export const Routes = props => (
                 />
             )}
         />
-    </div>
+    </Switch>
 )
 
 export default pageWithoutLayout(Routes);
