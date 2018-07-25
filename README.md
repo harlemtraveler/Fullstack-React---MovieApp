@@ -1,14 +1,30 @@
-# Quickstart
+# Movie Preview & Rating App
 
 ***************************************************
-## TO START BACKEND SERVER AND BOTH APIs, FOLLOW THESE STEPS IN TERMINAL:
+## Quickstart
 
-[+] In the "backend" directory, run the following command in Terminal:
+TO START BACKEND SERVER AND BOTH APIs, FOLLOW THESE STEPS IN TERMINAL:
+
+***********************************************************
+### Run the back-end web server
+
+From the root of the application, cd into the backend directory
+
 ```bash
+cd backend
+```
+
+Then install the dependencies and start the application:
+
+```bash
+yarn install
 MOVIE_API_KEY=<your-api-key-here> yarn start
 ```
 
-[+] In another Terminal window (in the same project folder), run the following commands to sign up with your own application server (which is pulling info via web DB's api)
+***********************************************************
+### Sign into your own backend server that's running locally within the 'backend' directory
+
+In another Terminal window (in the same project folder), run the following commands to sign up with your own application server (which is pulling info via web DB's api)
 
 ```bash
 URL='http://localhost:3456'
@@ -34,26 +50,23 @@ echo $TOKEN
 
 (The above is an example output of $TOKEN)
 
-[+] You should be good to go!
+You should be good to go!
 - There is a Font end and Backend Application
 - The Frontend is using an API to call to Backend
 - The Backend is using an API to call to Moviesdb.org
+- Next, let's look at getting
+
 ***********************************************************
-### Run the back-end web server
-
-```bash
-cd backend
-```
-
-Then install the dependencies and start the application:
-
-```bash
-yarn install
-MOVIE_API_KEY=[YOUR KEY] yarn start
-```
-
 
 ### Run the front-end web
+
+Open a new Terminal Window
+
+```bash
+CmdOrCtrl+T
+```
+
+From the root of the application, cd into the client directory
 
 ```bash
 cd client
