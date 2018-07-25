@@ -1,11 +1,13 @@
 const BASE_URL = 'http://localhost:3456'
+// const BASE_URL = 'https://api.themoviedb.org/3'
 const defaultFetchOpts = {}
 const defaultHeaders = {
     'Content-Type': 'application/json',
     'Accept': 'application/json'
 }
 
-const AUTH_TOKEN = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1dWlkIjoiOGU4ODM5ODAtODJmOS0xMWU4LThlMDItYjk2ZjQ0ZGNjN2MxIiwiaWF0IjoxNTMxMDg3MzU0fQ.Rj_Y8fCJlKr0yzj2gxmeuWdbtq1OgzpDLlMovzUcuWY"
+const AUTH_TOKEN = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1dWlkIjoiYzVjYzYzZjAtOGVjOC0xMWU4LTg5YjItNGQ5ZjQ3OGFlNzlkIiwiaWF0IjoxNTMyMzg1NDY0fQ.UmHyiAZQhZY0Z_209uaeTVW38_u7KgW7FDymg804pxQ"
+// const AUTH_TOKEN = ""
 
 // This takes in a parameter that's an object and
 // returns it's properties replaced with their encoded values
